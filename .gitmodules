@@ -17,3 +17,12 @@
 [submodule "custom-erc20/lib/openzeppelin-contracts"]
 	path = custom-erc20/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "custom-nft/lib/forge-std"]
+	path = custom-nft/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "custom-nft/lib/openzeppelin-contracts"]
+	path = custom-nft/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "custom-nft/lib/foundry-devops"]
+	path = custom-nft/lib/foundry-devops
+	url = https://github.com/Cyfrin/foundry-devops
