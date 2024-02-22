@@ -42,11 +42,10 @@ contract FundMeTest is Test {
     }
 
     function testPriceFeedVersionIsAccurate() public {
-        // with the default configs, priceFeed won't work because address for it is only for sepolia
-        // and we're on local network rn (anvil)
+        // local network rn (anvil) this wont work without mocks cuz priceFeed doesnt exist on anvil
         uint256 version = fundMe.getVersion();
         assertEq(version, 4);
-        // make this work by FORKING sepolia testnet (not actually testing on testnet)
+        // make this work without mocks by FORKING sepolia testnet (not actually testing on testnet)
         // add rpc url from alchemy to .env
         // load env vars from .env into the current shell session with > source .env
         // > forge test --mt testPriceFeedVersionIsAccurate --fork-url $SEPOLIA_RPC_URL
